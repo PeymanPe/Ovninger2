@@ -13,10 +13,8 @@ namespace Ovninger2
             CustomerAge = age;
         }
         public uint CustomerAge { get;}
-        public void PrintAge()
-        {
-            Console.WriteLine(CustomerAge);
-            
-        }
+        
+
+
     }
 }

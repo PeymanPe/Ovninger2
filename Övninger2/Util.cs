@@ -11,14 +11,14 @@ namespace Ovninger2
         public static string AskForString(string prompt)
         {
             bool success = false;
-            string name;
+            string age;
 
             do
             {
                 Console.WriteLine($"{prompt}: ");
-                name = Console.ReadLine();
+                age = Console.ReadLine();
 
-                if (string.IsNullOrWhiteSpace(name))
+                if (string.IsNullOrWhiteSpace(age))
                 {
                     Console.WriteLine($"You must enter a valid {prompt}");
                 }
@@ -29,7 +29,7 @@ namespace Ovninger2
 
             } while (!success);
 
-            return name;
+            return age;
         }
 
         internal static uint AskForUInt(string prompt)
